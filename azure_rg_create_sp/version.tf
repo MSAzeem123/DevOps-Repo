@@ -7,6 +7,13 @@ terraform {
       version = ">= 4.25.0"
     }
   }
+     backend "azurerm" {
+    resource_group_name  = "terraform-state-backend-01-rg"
+    storage_account_name = "terraformbackendstorerg"
+    container_name       = "container-rg-sp-01"
+    key                  = "azure_rg_create/rg.terraform.state"
+  }
+ 
 }
 
 provider "azurerm" {
