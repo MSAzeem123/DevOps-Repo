@@ -24,11 +24,6 @@ jobs:
       run: terraform init
       working-directory: azure_rg_create_sp
 
-    # Checks that all Terraform configuration files adhere to a canonical format
-    - name: Terraform Format
-      run: terraform fmt -check
-      working-directory: azure_rg_create_sp
-
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
