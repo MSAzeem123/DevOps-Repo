@@ -2,7 +2,7 @@ name: azure rg deployment ci
 
 on:
   push:
-    branches: [ "main", "azure_rg_create" ]
+    branches: azure_rg_create
   workflow_dispatch:
 
 jobs:
